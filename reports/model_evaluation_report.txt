@@ -1,0 +1,82 @@
+=== MODEL EVALUATION REPORT ===
+
+=========================================
+PART 1: CLASSIFICATION (Predicting Nutrition_Label)
+=========================================
+
+--- Decision Tree ---
+Accuracy:          0.9078
+Precision:         0.9089
+Recall (TPR):      0.9078
+Specificity (TNR): 0.9546 (Macro Avg)
+F1 Score:          0.9080
+Fβ Score (β=0.5):  0.9085
+Balanced Accuracy: 0.8708
+Error Rate:        0.0922
+
+--- Random Forest ---
+Accuracy:          0.9369
+Precision:         0.9366
+Recall (TPR):      0.9369
+Specificity (TNR): 0.9617 (Macro Avg)
+F1 Score:          0.9335
+Fβ Score (β=0.5):  0.9344
+Balanced Accuracy: 0.8943
+Error Rate:        0.0631
+
+--- XGBoost ---
+Accuracy:          0.9369
+Precision:         0.9353
+Recall (TPR):      0.9369
+Specificity (TNR): 0.9652 (Macro Avg)
+F1 Score:          0.9357
+Fβ Score (β=0.5):  0.9354
+Balanced Accuracy: 0.9018
+Error Rate:        0.0631
+
+--- CatBoost ---
+Accuracy:          0.9612
+Precision:         0.9607
+Recall (TPR):      0.9612
+Specificity (TNR): 0.9770 (Macro Avg)
+F1 Score:          0.9603
+Fβ Score (β=0.5):  0.9604
+Balanced Accuracy: 0.9382
+Error Rate:        0.0388
+
+--- Stacking ---
+Accuracy:          0.9563
+Precision:         0.9559
+Recall (TPR):      0.9563
+Specificity (TNR): 0.9748 (Macro Avg)
+F1 Score:          0.9551
+Fβ Score (β=0.5):  0.9553
+Balanced Accuracy: 0.9294
+Error Rate:        0.0437
+
+
+=========================================
+PART 2: REGRESSION (Predicting Nutrition_Score)
+=========================================
+
+--- Decision Tree Regressor ---
+R2 Square:       0.9192
+Adj R2 Square:   0.9146
+MAE:             1.1942
+MSE:             4.3883
+RMSE:            2.0948
+
+--- Random Forest Regressor ---
+R2 Square:       0.9652
+Adj R2 Square:   0.9632
+MAE:             0.8596
+MSE:             1.8923
+RMSE:            1.3756
+
+--- XGBoost Regressor ---
+R2 Square:       0.9772
+Adj R2 Square:   0.9759
+MAE:             0.7048
+MSE:             1.2389
+RMSE:            1.1131
+
